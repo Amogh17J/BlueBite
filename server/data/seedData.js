@@ -1095,6 +1095,64 @@ const seedRestaurants = [
       { id: "m-3602", name: "Slow Smoked Pork Ribs with Bourbon Glaze", price: 580, isVeg: false, rating: 4.9, description: "Tender ribs braised for 8 hours in Kentucky bourbon and molasses barbecue reduction.", image: "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?w=500&auto=format&fit=crop&q=80", category: "Starters" },
       { id: "m-3603", name: "Artisanal Wood Oven Baked Brie", price: 380, isVeg: true, rating: 4.8, description: "Whole wheel of French brie baked with rosemary honey and toasted walnut bread.", image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=500&auto=format&fit=crop&q=80", category: "Starters" }
     ]
+  },
+  {
+    id: "rest-37",
+    name: "Toit Brewpub & Kitchen",
+    description: "Bangalore's most iconic microbrewery on 100ft Road, famed for woodfired thin-crust pizzas, craft ales, and BBQ wings.",
+    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&auto=format&fit=crop&q=80",
+    rating: 4.8,
+    ratingCount: "22.5k+",
+    cuisines: ["Pizza", "Continental", "Bar & Grill"],
+    deliveryTime: 28,
+    priceForTwo: 900,
+    distance: "1.6 km",
+    pureVeg: false,
+    hasOffer: true,
+    offerText: "Flat 10% OFF on Dine-in Reservations",
+    deliveryFee: 20,
+    category: ["Dining Out", "Delivery"],
+    diningDetails: {
+      hasOutdoorSeating: true,
+      hasTableBooking: true,
+      ambience: "Two-floor bustling craft pub with industrial copper brewery tanks and upbeat rock vibes",
+      alcohol: true
+    },
+    address: { street: "100 Feet Road, Indiranagar", city: "Bengaluru", area: "Indiranagar" },
+    menu: [
+      { id: "m-3701", name: "Toit Tintin Woodfired Pizza", price: 440, isVeg: false, rating: 4.9, description: "Signature thin-crust pizza topped with smoked chicken, sun-dried tomatoes, and basil pesto.", image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&auto=format&fit=crop&q=80", category: "Pizza" },
+      { id: "m-3702", name: "Spicy Baked Jalapeno Cheese Nachos", price: 310, isVeg: true, rating: 4.7, description: "Corn tortilla chips layered with molten cheddar, refried beans, sour cream, and pico de gallo.", image: "https://images.unsplash.com/photo-1576107232684-1279f3908594?w=500&auto=format&fit=crop&q=80", category: "Starters" },
+      { id: "m-3703", name: "Classic BBQ Glazed Chicken Wings", price: 330, isVeg: false, rating: 4.8, description: "Crisp jumbo wings tossed in house smoky porter beer barbecue sauce.", image: "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=500&auto=format&fit=crop&q=80", category: "Starters" }
+    ]
+  },
+  {
+    id: "rest-38",
+    name: "Empire Restaurant Heritage",
+    description: "The taste of Bangalore since 1966. Famous for midnight ghee rice, Empire special grilled chicken, and coin parottas.",
+    image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=800&auto=format&fit=crop&q=80",
+    rating: 4.5,
+    ratingCount: "29.8k+",
+    cuisines: ["North Indian", "Biryani", "Mughlai"],
+    deliveryTime: 20,
+    priceForTwo: 340,
+    distance: "1.8 km",
+    pureVeg: false,
+    hasOffer: true,
+    offerText: "Midnight Super Saver Combo @ ₹249",
+    deliveryFee: 15,
+    category: ["Delivery", "Dining Out"],
+    diningDetails: {
+      hasOutdoorSeating: false,
+      hasTableBooking: true,
+      ambience: "Legendary multi-floor diner open till the late hours with bustling family service",
+      alcohol: false
+    },
+    address: { street: "Church Street, Off MG Road", city: "Bengaluru", area: "Church Street" },
+    menu: [
+      { id: "m-3801", name: "Empire Special Ghee Rice with Dal", price: 170, isVeg: true, rating: 4.9, description: "Fragrant short-grain jeera rice tempered in golden ghee with fried onions and cashew nuts.", image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500&auto=format&fit=crop&q=80", category: "North Indian" },
+      { id: "m-3802", name: "Empire Charcoal Grilled Chicken (Half)", price: 260, isVeg: false, rating: 4.8, description: "The iconic juicy grilled chicken seasoned with signature pepper spice blend and garlic toum.", image: "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?w=500&auto=format&fit=crop&q=80", category: "Starters" },
+      { id: "m-3803", name: "Kerala Coin Parotta (3 pcs)", price: 65, isVeg: true, rating: 4.7, description: "Layered, flaky, spiral golden flatbreads cooked with ghee on a flat tawa.", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&auto=format&fit=crop&q=80", category: "Breads" }
+    ]
   }
 ];
 
