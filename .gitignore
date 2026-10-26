@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Environment files and credentials
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.env.local
+# Allow template example file
+!.env.example
+!server/.env.example
+
+# Production Build Output
+dist/
+client/dist/
+build/
+
+# Operating System and IDE files
+.DS_Store
+*.DS_Store
+.vscode/
+.idea/
+*.code-workspace
+
+# Debug and runtime logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
