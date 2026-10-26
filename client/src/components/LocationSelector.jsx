@@ -443,7 +443,7 @@ export const LocationSelector = () => {
                         className="form-text-input with-icon"
                         placeholder="e.g. +91 91234 56789"
                         value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
+                        onChange={(e) => setPhone(e.target.value.replace(/[^\d+ -]/g, '').slice(0, 16))}
                       />
                     </div>
                   </div>

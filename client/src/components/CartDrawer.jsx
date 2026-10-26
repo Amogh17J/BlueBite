@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, ShoppingBag, Plus, Minus, Tag, Check, ArrowRight, MapPin, Bike, Home, Building2, Briefcase } from 'lucide-react';
+import { X, ShoppingBag, Plus, Minus, Tag, Check, ArrowRight, MapPin, Bike, Home, Building2, Briefcase, AlertCircle } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
 export const CartDrawer = () => {
@@ -30,12 +30,14 @@ export const CartDrawer = () => {
 
   const handleApplyCoupon = (e) => {
     e.preventDefault();
-    if (!couponInput.trim()) return;
-    if (couponInput.toUpperCase() === 'BLUEBITE' || couponInput.toUpperCase() === 'TASTY') {
-      setPromoCode(couponInput.toUpperCase());
-      setCouponMsg(`Coupon ${couponInput.toUpperCase()} applied!`);
+    const clean = couponInput.trim().toUpperCase();
+    if (!clean) return;
+    if (clean === 'BLUEBITE' || clean === 'TASTY') {
+      setPromoCode(clean);
+      setCouponMsg(`Coupon ${clean} applied!`);
+      setCouponInput('');
     } else {
-      setCouponMsg('Invalid coupon code. Try BLUEBITE');
+      setCouponMsg('Invalid coupon code. Try BLUEBITE or TASTY');
     }
   };
 
@@ -160,8 +162,8 @@ export const CartDrawer = () => {
                 </button>
               </form>
               {couponMsg && (
-                <div className="coupon-applied-msg">
-                  <Check size={14} />
+                <div className={`coupon-applied-msg ${couponMsg.includes('Invalid') ? 'coupon-error-msg' : ''}`}>
+                  {couponMsg.includes('Invalid') ? <AlertCircle size={14} /> : <Check size={14} />}
                   <span>{couponMsg}</span>
                 </div>
               )}

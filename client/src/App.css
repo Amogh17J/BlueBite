@@ -1424,6 +1424,10 @@
   font-weight: 600;
 }
 
+.coupon-applied-msg.coupon-error-msg {
+  color: #DC2626;
+}
+
 /* Bill Details */
 .bill-details-card {
   background-color: #F8FAFC;
