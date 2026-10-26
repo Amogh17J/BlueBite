@@ -33,6 +33,18 @@ app.get('/api/health', (req, res) => {
   });
 });
 
+// Serve static frontend in production if built
+const path = require('path');
+const fs = require('fs');
+const clientDistPath = path.join(__dirname, '../client/dist');
+if (fs.existsSync(clientDistPath)) {
+  app.use(express.static(clientDistPath));
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api')) return next();
+    res.sendFile(path.join(clientDistPath, 'index.html'));
+  });
+}
+
 // Error handling middleware
 app.use(errorHandler);
 

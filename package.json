@@ -6,6 +6,8 @@
     "server": "npm --prefix server run dev",
     "client": "npm --prefix client run dev",
     "dev": "node -e \"const { spawn } = require('child_process'); spawn('npm', ['--prefix', 'server', 'run', 'dev'], { stdio: 'inherit', shell: true }); spawn('npm', ['--prefix', 'client', 'run', 'dev'], { stdio: 'inherit', shell: true });\"",
-    "install:all": "npm --prefix server install && npm --prefix client install"
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "build": "npm --prefix client install && npm --prefix client run build && npm --prefix server install",
+    "start": "node server/server.js"
   }
 }
