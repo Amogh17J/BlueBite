@@ -1,15 +1,11 @@
 # Demo Video Link:- 
 https://drive.google.com/drive/folders/1PZZ6Vh2qDc0UYtO-JJ3dtZqEBvX1jzmr?usp=sharing
 
+---
 
 # BlueBite · Food Discovery & Delivery Application
 
 A modern, full-stack food discovery and restaurant ordering application built with the MERN stack (MongoDB, Express, React, Node.js). Inspired by the usability, information hierarchy, and visual polish of modern food tech platforms, engineered strictly with a bespoke blue-and-white visual identity and robust MVC architecture.
-
----
-
-## 📌 Project Name
-**BlueBite**
 
 ---
 
